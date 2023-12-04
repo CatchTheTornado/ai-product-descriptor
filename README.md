@@ -122,6 +122,15 @@ Before you begin, ensure you have the following installed on your system:
   
    ```
 
+    Now, you're ready to query the service:
+
+
+   ```bash
+    curl -X POST http://localhost:8000/describe/ \
+         -H "Content-Type: application/json" \
+         -d '{"image_url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Sports_shoes.jpg"}'
+   ```
+
 ## TODO
 
 1. Add async call support.
